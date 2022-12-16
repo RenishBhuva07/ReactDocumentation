@@ -1,13 +1,146 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+ul li {
+    list-style: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*::selection {
+    background-color: purple;
+    color: white;
+    transition: 0.1s ease-in-out;
+}
+
+body {
+    background: var(--lush) no-repeat;
+}
+
+:root {
+    --lush: linear-gradient(#1AA37A, #9DFFB3);
+    --happy: linear-gradient(#F09819, #FF5858);
+    --happyReverse: linear-gradient(#FF5858, #F09819);
+    --purple: rgb(188, 100, 188);
+    --green: rgb(68, 162, 68);
+    --red: rgb(232, 31, 31);
+    --highlight: rgba(187, 239, 253, 0.3);
+}
+
+.bg-lush {
+    background: var(--lush);
+}
+
+.bg-happy {
+    background: var(--happy);
+}
+
+.bg-happyReverse {
+    background: var(--happyReverse);
+}
+
+
+.purple {
+    color: var(--purple);
+}
+
+.green {
+    color: var(--green);
+}
+
+.red {
+    color: var(--red);
+}
+
+.highlight {
+    background: var(--highlight);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.head {
+    background-color: #7edff9e6;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+
+.btn {
+    font-size: 15px;
+    font-family: Arial;
+    /* width: 140px; */
+    /* height: 50px; */
+    border-width: 1px;
+    color: rgba(0, 0, 0, 1);
+    border-color: rgba(246, 180, 67, 1);
+    font-weight: bold;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: 0px 10px 14px -7px rgba(226, 151, 29, 1);
+    text-shadow: 0px 1px 0px rgba(18, 39, 46, 1);
+    background: linear-gradient(rgba(245, 166, 35, 1), rgba(248, 231, 28, 1));
+}
+
+.btn:hover {
+    background: linear-gradient(rgba(248, 231, 28, 1), rgba(245, 166, 35, 1));
+}
+
+ul{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+ul li a {
+    color: white;
+    font-size: 1.2rem;
+    /* font-weight: bold; */
+}
+
+ul li a:hover {
+    color: black;
+}
+
+ul li a:focus {
+    color: black;
+}
+
+a h4 {
+    color: black;
+}
+
+a h4:hover {
+    color: white;
+}
+
+.b_radius {
+    border-radius: 10px;
+}
+
+h4 {
+    /* font-weight: 600; */
+    display: inline-block;
+    color: black;
+}
+
+h4 a {
+    color: black;
+}
+
+.FancyBorder {
+    padding: 10px 10px;
+    border: 10px solid;
+    background: var(--highlight);
+}
+
+.FancyBorder-red {
+    border-color: var(--red);
+}
+
+.Dialog-title {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.Dialog-message {
+    font-size: larger;
+}
+
+.h-200 {
+    /* font-size: 50px; */
+    height: 200px;
 }
